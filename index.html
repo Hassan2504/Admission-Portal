@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+<div class="form">
+    <div class="title">Welcome to Saylani Admission Portal</div>
+    <div class="subtitle">Please fill out your details!</div>
+
+    <div class="input-container">
+        <input type="text" class="input" id="fullname" required>
+        <label class="iLabel" for="fullname">Full Name</label>
+    </div>
+
+    <div class="input-container">
+        <input type="date" class="input" id="dob" required>
+        <label class="iLabel" for="dob">Date of Birth</label>
+    </div>
+
+    <div class="input-container">
+        <input type="email" class="input" id="email" required>
+        <label class="iLabel" for="email">Email Address</label>
+    </div>
+
+    <div class="input-container">
+        <input type="tel" class="input" id="phone" required>
+        <label class="iLabel" for="phone">Phone Number</label>
+    </div>
+
+    <div class="input-container">
+        <input type="text" class="input" id="qualification" required>
+        <label class="iLabel" for="qualification">Highest Qualification</label>
+    </div>
+
+    <div class="input-container">
+        <input type="text" class="input" id="institution" required>
+        <label class="iLabel" for="institution">Last Institution Attended</label>
+    </div>
+
+    <div class="input-container">
+        <input type="text" class="input" id="gradyear" required>
+        <label class="iLabel" for="gradyear">Year of Graduation</label>
+    </div>
+
+    <div class="input-container">
+        <select class="input" id="program" required>
+            <option value="" disabled selected>Select Program</option>
+            <option value="Computer Science">Computer Science</option>
+            <option value="Business Management">Business Management</option>
+            <option value="Engineering">Engineering</option>
+        </select>
+        <label class="iLabel" for="program">Desired Program</label>
+    </div>
+
+    <div class="input-container checkbox-container">
+        <label><input type="checkbox" name="courses" value="Workshop1"> Web Development</label>
+        <label><input type="checkbox" name="courses" value="Workshop2"> Graphic Designing</label>
+        <label><input type="checkbox" name="courses" value="Workshop3"> Digital Marketing</label>
+    </div>
+
+    <div class="input-container">
+        <input type="text" class="input" id="address" required>
+        <label class="iLabel" for="address">Permanent Address</label>
+    </div>
+
+    <div class="input-container">
+        <input type="text" class="input" id="city" required>
+        <label class="iLabel" for="city">City</label>
+    </div>
+
+    <div class="input-container">
+        <input type="text" class="input" id="postal" required>
+        <label class="iLabel" for="postal">Postal Code</label>
+    </div>
+
+    <button class="submit" type="button" onclick="showConfirmation()">Submit</button>
+    
+    <div id="confirmation" class="confirmation-message" style="display: none;">
+        Thank you for your submission!
+    </div>
+</div>
+
+<script>
+    function showConfirmation() {
+        document.getElementById("confirmation").style.display = "block";
+    }
+</script>
+
+</body>
+</html>
